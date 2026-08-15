@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Jaspar Schultz — software engineer focused on C#/.NET, engineering automation, developer tools and full-stack technical products.">
+  <title>Jaspar Schultz — Software Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="noise"></div><div class="cursor-glow" id="glow"></div>
+<div class="site-trace" aria-hidden="true">
+  <svg viewBox="0 0 1000 1200" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="traceGlow" x="-40%" y="-40%" width="180%" height="180%">
+        <feGaussianBlur stdDeviation="5" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <g id="traceParallax">
+      <path class="site-trace-base" d="M80 -90 C330 40 780 80 700 250 C630 405 180 360 245 545 C305 710 825 650 748 850 C690 1000 290 965 355 1140 C385 1220 555 1255 855 1310"/>
+      <path id="scrollTraceProgress" class="site-trace-progress" filter="url(#traceGlow)" d="M80 -90 C330 40 780 80 700 250 C630 405 180 360 245 545 C305 710 825 650 748 850 C690 1000 290 965 355 1140 C385 1220 555 1255 855 1310"/>
+    </g>
+  </svg>
+</div>
+<nav>
+  <a class="brand" href="#top">JS<span>.</span></a>
+  <div class="navlinks">
+    <a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#stack">Stack</a><a href="#about">About</a><a href="#contact">Contact</a>
+    <a class="pill" href="https://github.com/V3lCryn" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </div>
+</nav>
+<main id="top">
+<section class="hero">
+  <div class="eyebrow reveal">MELBOURNE, AUSTRALIA <i></i> SOFTWARE ENGINEER</div>
+  <h1 class="reveal">I build software<br>that <em>does things.</em></h1>
+  <p class="hero-role reveal">SOFTWARE ENGINEER · DEVELOPER TOOLS · AUTOMATION</p><p class="lead reveal">I build practical software where code meets a real technical problem — C#/.NET engineering tools, developer tooling, AI-connected automation and full-stack products.</p>
+  <div class="hero-actions reveal"><a class="button primary" href="#work">Explore my work <span>↓</span></a><a class="button" href="#contact">Work with me ↗</a></div>
+  <div class="orbit" aria-hidden="true"><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div><div class="core">&lt;/&gt;</div></div>
+  <div class="scroll">SCROLL TO EXPLORE <span>↓</span></div>
+</section>
+
+<section class="identity" aria-labelledby="identity-title">
+  <div class="identity-intro reveal">
+    <span>WHAT I ACTUALLY DO</span>
+    <h2 id="identity-title">Software engineering for <em>technical work.</em></h2>
+    <p>I work best where software needs to understand the domain around it. My projects look different on the surface, but the pattern is consistent: learn the problem deeply, then build the tool that removes friction.</p>
+  </div>
+  <div class="identity-pillars reveal">
+    <article><span>01</span><h3>Engineering Automation</h3><p>C#/.NET, Revit API, data workflows and AI-connected tools that turn repetitive technical processes into dependable software.</p><div>Sheet2Schedule · MCP / Revit</div></article>
+    <article><span>02</span><h3>Developer Tools</h3><p>Compilers, CLIs, testing systems and tooling where architecture, correctness and the developer experience matter.</p><div>Volta · Scry · QA Automation</div></article>
+    <article><span>03</span><h3>Full-stack Products</h3><p>APIs, databases and polished interfaces built as complete products rather than isolated demos.</p><div>LaunchKit · Integration Lab · SendForge</div></article>
+  </div>
+  <div class="target-strip reveal"><span>CURRENTLY TARGETING</span><b>Software Engineer</b><i></i><b>.NET Developer</b><i></i><b>Automation Engineer</b><i></i><b>Developer Tools</b></div>
+</section>
+
+<section id="work" class="work">
+  <div class="section-head reveal"><span>01 / SELECTED WORK</span><h2>Things I've built.</h2></div>
+
+  <article class="feature s2s reveal">
+    <div class="feature-copy"><div class="num">01</div><div class="tag">FLAGSHIP · C#/.NET · ENGINEERING AUTOMATION</div><h3>Sheet<span>2</span>Schedule</h3><p class="big">Excel to native Revit schedules, without rebuilding them by hand.</p><p>A Revit add-in that imports structured spreadsheet data, previews it, creates schedules, maintains source links and supports refreshing schedules when the workbook changes.</p><div class="chips"><span>C#</span><span>.NET</span><span>Revit API</span><span>ClosedXML</span><span>Desktop UX</span></div><div class="links"><a href="https://github.com/V3lCryn/Sheet2Schedule" target="_blank" rel="noreferrer">Source ↗</a></div></div>
+    <div class="s2s-visual"><img src="assets/sheet2schedule-square.png" alt="Sheet2Schedule Excel to Revit workflow artwork"><div class="flow"><span>EXCEL</span><i></i><span>MAP</span><i></i><span>REVIT</span></div></div>
+  </article>
+
+  <article class="feature volta reveal">
+    <div class="feature-copy"><div class="num">02</div><div class="tag">FLAGSHIP · SYSTEMS ENGINEERING</div><h3>Volta</h3><p class="big">A low-level scripting language that compiles to C.</p><p>Built from the ground up in Rust to explore compiler architecture, language design and systems programming, with readable Lua-like syntax and native output.</p><div class="chips"><span>Rust</span><span>Compiler Design</span><span>C</span><span>Systems</span></div><div class="links"><a href="https://github.com/V3lCryn/volta" target="_blank" rel="noreferrer">Source ↗</a></div></div>
+    <div class="volta-visual"><div class="terminal"><div class="terminal-top"><i></i><i></i><i></i><span>volta — ~/projects</span></div><pre><code><b>$</b> volta signal.vlt
+
+<span>fn</span> main()
+  <span>let</span> samples = [12, 18, 31, 46]
+  <span>let</span> peak = max(samples)
+  print(<q>"peak: {peak}"</q>)
+<span>end</span>
+
+<small>→ generating C99...</small>
+<small>→ clang signal.c -o signal</small>
+<strong>✓ peak: 46</strong></code></pre></div><div class="pipeline"><span>SOURCE</span><b>→</b><span>LEXER</span><b>→</b><span>AST</span><b>→</b><span>C99</span><b>→</b><span>NATIVE</span></div></div>
+  </article>
+
+  <article class="feature launchkit reveal">
+    <div class="feature-copy"><div class="num">03</div><div class="tag">PRODUCT ENGINEERING · FRONTEND</div><h3>LaunchKit Pro</h3><p class="big">A polished component system built to ship product pages faster.</p><p>A commercial-ready Next.js UI pack with 34+ responsive sections across hero, feature, CTA, FAQ, testimonial, dashboard, documentation, integration and footer patterns.</p><div class="chips"><span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>shadcn/ui</span><span>Product Design</span></div></div>
+    <div class="launchkit-visual" aria-label="Stylised LaunchKit component preview">
+      <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>launchkit / component library</span></div><div class="browser-body"><div class="mini-nav"></div><div class="mini-hero"><span></span><b></b><p></p><div></div></div><div class="mini-grid"><i></i><i></i><i></i></div></div></div>
+      <div class="component-count"><strong>34+</strong><span>premium sections</span></div>
+    </div>
+  </article>
+
+  <div class="section-head secondary reveal"><span>MORE ENGINEERING</span><h2>Different problems.<br>Same obsession with building.</h2></div>
+  <div class="grid">
+    <a class="card reveal" href="https://github.com/V3lCryn/Scry" target="_blank" rel="noreferrer"><div class="card-top"><span>04 / SECURITY TOOLING</span><b>↗</b></div><div class="glyph radar"><i></i></div><h3>Scry</h3><p>Modular OSINT investigation framework for lawful public intelligence collection, correlation and reporting.</p><div class="chips"><span>Python</span><span>CLI</span><span>OSINT</span></div></a>
+    <a class="card reveal" href="https://github.com/V3lCryn/laravel-integration-lab" target="_blank" rel="noreferrer"><div class="card-top"><span>05 / FULL STACK</span><b>↗</b></div><div class="glyph nodes"><i></i><i></i><i></i></div><h3>Integration Lab</h3><p>Laravel sandbox for Azure, Shopify and WooCommerce-style integrations with provider architecture and product sync.</p><div class="chips"><span>Laravel</span><span>PHP</span><span>APIs</span></div></a>
+    <a class="card reveal" href="https://github.com/V3lCryn/qa-automation-showcase" target="_blank" rel="noreferrer"><div class="card-top"><span>06 / QUALITY ENGINEERING</span><b>↗</b></div><div class="glyph test">✓</div><h3>QA Automation</h3><p>Browser and API automation showcase built around maintainable test architecture and real CI workflows.</p><div class="chips"><span>Playwright</span><span>TypeScript</span><span>CI</span></div></a>
+    <a class="card reveal" href="https://github.com/V3lCryn/sendforge" target="_blank" rel="noreferrer"><div class="card-top"><span>07 / WEB APPLICATION</span><b>↗</b></div><div class="glyph mail">→</div><h3>SendForge</h3><p>Rails application exploring campaigns, contacts, deliveries, queues and relational application design.</p><div class="chips"><span>Rails</span><span>Ruby</span><span>PostgreSQL</span></div></a>
+  </div>
+</section>
+
+<section id="capabilities" class="capabilities">
+  <div class="section-head reveal"><span>02 / CAPABILITIES</span><h2>Software meets engineering.<br><em>AI meets the workflow.</em></h2></div>
+  <div class="cap-grid">
+    <article class="cap-card reveal"><div class="cap-index">01</div><div class="cap-icon mcp"><span>AI</span><b>↔</b><span>MCP</span></div><h3>AI Automation</h3><p>Connecting AI tools to real engineering workflows through APIs, tool interfaces and MCP-style connectors instead of stopping at chat interfaces.</p><ul><li>AI-assisted engineering workflows</li><li>Tool and connector design</li><li>Structured context + actions</li><li>Human-in-the-loop automation</li></ul></article>
+    <article class="cap-card reveal"><div class="cap-index">02</div><div class="cap-icon revit"><span>R</span><b>+</b><span>{ }</span></div><h3>Revit + Software</h3><p>I understand both the model and the code around it, which lets me automate tasks with context that generic software teams often miss.</p><ul><li>Revit API / C# add-ins</li><li>BIM workflow automation</li><li>Excel and data interoperability</li><li>Engineering-focused UX</li></ul></article>
+    <article class="cap-card reveal"><div class="cap-index">03</div><div class="cap-icon full"><span>&lt;/&gt;</span></div><h3>Full-stack Products</h3><p>From database models and APIs to polished interfaces, testing and deployment, I can take an idea through the entire product path.</p><ul><li>.NET + web backends</li><li>TypeScript / React / Next.js</li><li>SQL + integrations</li><li>Testing and CI</li></ul></article>
+  </div>
+  <div class="mcp-strip reveal"><span class="mcp-label">EXAMPLE DIRECTION</span><div class="mcp-flow"><b>AI CLIENT</b><i></i><b>MCP / TOOL LAYER</b><i></i><b>REVIT API</b><i></i><b>MODEL ACTION</b></div><p>Ask for information, inspect model context, run a constrained tool, return structured results.</p></div>
+</section>
+
+<section id="stack" class="stack-section">
+  <div class="section-head reveal"><span>03 / LANGUAGES & STACK</span><h2>Enough range to pick<br>the right tool.</h2></div>
+  <div class="stack-grid reveal">
+    <div class="stack-col primary-stack"><span class="stack-kicker">PRIMARY</span><h3>C# / .NET</h3><p>My professional focus for engineering automation, desktop tooling and application development.</p><div class="meter"><i style="--w:92%"></i></div></div>
+    <div class="stack-col"><span class="stack-kicker">WEB</span><h3>TypeScript</h3><p>React, Next.js, browser tooling and modern frontend product work.</p><div class="meter"><i style="--w:86%"></i></div></div>
+    <div class="stack-col"><span class="stack-kicker">SYSTEMS</span><h3>Rust + C</h3><p>Compiler implementation, lower-level systems work and native code generation.</p><div class="meter"><i style="--w:76%"></i></div></div>
+    <div class="stack-col"><span class="stack-kicker">AUTOMATION</span><h3>Python</h3><p>CLI tooling, security experiments, automation and data-oriented scripts.</p><div class="meter"><i style="--w:78%"></i></div></div>
+    <div class="stack-col"><span class="stack-kicker">BACKEND</span><h3>PHP / Laravel</h3><p>Application architecture, integrations, persistence and API workflows.</p><div class="meter"><i style="--w:70%"></i></div></div>
+    <div class="stack-col"><span class="stack-kicker">BACKEND</span><h3>Ruby / Rails</h3><p>Rapid application development, relational models and background workflows.</p><div class="meter"><i style="--w:66%"></i></div></div>
+  </div>
+  <div class="platforms reveal"><span>REVIT API</span><span>SQL / POSTGRESQL</span><span>PLAYWRIGHT</span><span>GIT / CI</span><span>AZURE</span><span>REST APIS</span><span>UNITY</span><span>LINUX</span></div>
+</section>
+
+<section class="lab"><div class="section-head reveal"><span>04 / ENGINEERING LAB</span><h2>I learn by building<br>below the abstraction.</h2></div><div class="lab-row reveal"><div><span>RUBY VM</span><p>Stack machine & instruction execution</p></div><div><span>REVERSE ENGINEERING</span><p>Binary analysis & CTF investigations</p></div><div><span>LANGUAGE DESIGN</span><p>Parsers, ASTs & code generation</p></div><div><span>AI + TOOLING</span><p>Connectors, context and workflow automation</p></div></div></section>
+
+<section id="about" class="about"><div class="section-head reveal"><span>05 / ABOUT</span></div><div class="about-grid"><h2 class="reveal">Software engineer.<br><em>Domain-aware builder.</em></h2><div class="about-copy reveal"><p>I build software at the boundary between technology and a real problem domain: engineering workflows, developer tooling, automation and technical products.</p><p>My BIM and digital engineering background means I can understand the workflow before I automate it, then move between the API, data model, interface and user problem.</p><p class="about-focus">My strongest employment direction is C#/.NET software engineering, automation and developer tooling, with full-stack capability when the product needs it.</p></div></div></section>
+
+<section id="contact" class="contact">
+  <span class="reveal">AVAILABLE FOR SOFTWARE · .NET · AUTOMATION OPPORTUNITIES IN MELBOURNE</span>
+  <h2 class="reveal"><span class="contact-line">Building something</span><strong class="contact-line contact-outline">difficult?</strong></h2>
+  <p class="contact-copy reveal">I’m looking for a software engineering team where I can build useful tools, own real problems and bring technical domain knowledge into the code.</p>
+  <div class="contact-links reveal"><a href="https://www.linkedin.com/in/jaspar-schultz/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/V3lCryn" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+</section>
+</main>
+<footer><span>JASPAR SCHULTZ © 2026</span><span>SOFTWARE · ENGINEERING · AUTOMATION</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
